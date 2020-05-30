@@ -5,6 +5,15 @@
 - [はじめに](./intro)
 - [Level1: 環境設定、ゴールの確認、基礎](level1/intro) 
     - 完了までの想定： 3日間
+- [Level2: JavaScript応用文法とGoogleAppsScript](level2/intro)
+    - 完了までの想定： 3日間
+- ここから先はまだ記事を書いていません!!!
+- [Level3: DOMでHTMLを理解する](level3/intro)
+    - 完了までの想定： 3日間
+- [Level4: PuppeteerでChromeを操作する](level4/intro)
+    - 完了までの想定： 3日間
+- [Level5: 自分で考え、実装する](level5/intro)
+    - 完了までの想定： 5日間
 
 ## はじめに
 
@@ -35,7 +44,7 @@
 - ハンズオンコンテンツによる理解と演習
     - Apps Scriptハンズオン
         - Apps Scriptによるカレンダー予定の作成
-        - （題材検討中）
+        - Apps ScriptによるGmail/Spreadsheetの操作
     - puppeteer ハンズオン
         - オールスポーツコミュニティへの会員仮登録
 

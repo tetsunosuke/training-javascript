@@ -4,6 +4,7 @@ Level1の終わりには、プログラミングの基礎として、Progate の
 
 - [HTML & CSS 初級編](https://prog-8.com/lessons/html/study/1)
 - [JavaScript 1](https://prog-8.com/lessons/es6/study/1)
+- [JavaScript 2](https://prog-8.com/lessons/es6/study/2) : 繰り返し処理のまとめ まで
 
 
 
