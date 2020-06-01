@@ -42,7 +42,7 @@ Macの方は、`ホーム` に `training-javascript` というフォルダを作
 コマンドプロンプト／ターミナルで作業する際には
 
 ```
-(Windowsの人は)
+(Windowsの人は ※このままコピーするとエラーになるそうなので、自分で手入力しましょう)
 > cd C:¥training-javascript
 
 (Macの人は)
