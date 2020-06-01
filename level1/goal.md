@@ -24,6 +24,7 @@ Chromeにはデベロッパーツールという開発者向けのツールが�
 
 - [フォトクリエイトのその他のお問い合わせページ](https://www.photocreate.co.jp/contact/form_other/) を開きます
 - Chromeのメニュー[表示]->[開発/管理]->[デベロッパーツール]を起動します
+    - Windowsの場合はメニューの名前が違うそうなので、ショートカット：Ctrl+Shift+I が良いです。
 - Console というタブを選択します
 
 ![](./img/デベロッパーツール.jpg)
