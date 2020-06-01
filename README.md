@@ -4,9 +4,9 @@
 
 - [はじめに](./intro)
 - [Level1: 環境設定、ゴールの確認、基礎](level1/intro) 
-    - 完了までの想定： 3日間
+    - 完了までの想定： 2-3日間
 - [Level2: JavaScript応用文法とGoogleAppsScript](level2/intro)
-    - 完了までの想定： 3日間
+    - 完了までの想定： 3-5日間
 - ここから先はまだ記事を書いていません!!!
 - [Level3: DOMでHTMLを理解する](level3/intro)
     - 完了までの想定： 3日間
