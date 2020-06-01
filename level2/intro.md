@@ -81,6 +81,7 @@ let last = members.pop();
 console.log(`末尾は${last}でした。membersは${members}`);
 // 全部で何人いるでしょうか？
 console.log(`membersの人数は${members.length}です`);
+```
 
 また、下記のような記述がよく見られます。これは、配列の全ての値を繰り返すという意味です。
 
