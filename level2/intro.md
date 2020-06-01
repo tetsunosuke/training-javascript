@@ -81,6 +81,13 @@ let last = members.pop();
 console.log(`末尾は${last}でした。membersは${members}`);
 // 全部で何人いるでしょうか？
 console.log(`membersの人数は${members.length}です`);
+
+また、下記のような記述がよく見られます。これは、配列の全ての値を繰り返すという意味です。
+
+```js
+for (let i = 0; i < members.length; i++) {
+    console.log(members[i]);
+}
 ```
 
 ### 連想配列
@@ -192,6 +199,22 @@ console.log(members.indexOf("X"));
 クラスに含まれる関数はそのクラスごとに関数が定義されています。
 
 [Google Calendarのデータを扱うCalendarApp](https://developers.google.com/apps-script/reference/calendar/calendar-app) には40個近くの関数が存在します。やりたいことに関数が存在するかは、こういったリファレンスを見て調べることになります。
+
+
+## 練習問題
+
+デベロッパーツールを用いて、指定した配列の平均値を求めてみましょう。
+
+```javascript
+let nums = [1,2,3,4,5,10,20,30,40,50];
+let answer = 0;
+// まずは answer = answer + nums[0]; とすることで最初に1が足されます
+// 次に answer = answer + nums[1]; とすることで answer = 1 + 3となります
+// これを繰り返すと最後は answer = 115 + 50 となります
+// それを nums の 個数で割ると平均が求められます numsの個数を求める方法は？？
+// for (let i = 0; i < nums.length; i++ ) ... を使えば？？
+```
+
 
 [次のコンテンツ：カレンダーのアプリを理解してみよう](./calendar)
 
