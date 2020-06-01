@@ -62,11 +62,94 @@ GoogleAppsScriptのログには二種類あります。
 
 ![](./img/dashboard-log.jpg)
 
-この変数の中身はなんだろう？と思ったら、 `console.log(変数);` や、 ``console.log(`iの値は${i}`);``を埋め込んで、中身を確認するようにしてみましょう。
+この変数の中身はなんだろう？と思ったら、 `console.log(変数);` や、 ``console.log(`iの値は${i}`);``のように変数をログに埋め込んで、中身を確認するようにしてみましょう。
 
+### コンテナバインドスクリプトでスプレッドシートを操作する
 
+例えばセルに記入された値に応じて文字の色を変えたり、背景色を変更してみましょう。（このくらいの内容であれば、条件付き書式でできると思いますが、練習なので）
 
+スプレッドシートに適当に値を入力してみます。
 
+プログラムにこのように追記し、setColors関数を実行してみてください。
+
+```js
+function setColors() {
+  // 開いているシートを取得
+  const sheet = SpreadsheetApp.getActive().getActiveSheet();
+  // 値の入っているセル範囲を取得
+  const range = sheet.getDataRange();
+  // その範囲を #FF0000（赤）で塗りつぶす
+  range.setBackground("#FF0000");
+
+  // 興味があれば下記もやってみましょう
+  // const range2 = sheet.getRange("A1:B5");
+  // range2.setBackground("#0000FF");
+}
+```
+例えばこのように、特定範囲に対して背景色をつけたり、罫線を引いたりという操作も、[こちらのリファレンス](https://developers.google.com/apps-script/reference/spreadsheet/range)を見ることでできるようになります。
+
+#### 練習問題
+
+(1) 下記のプログラムを修正し、指定した名前で新しいシートを作成するプログラムを作成しましょう。
+
+ヒント： [SpreadSheetのリファレンス](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet) で "new sheet"を検索すると見つかりそうです。
+
+```js
+function createNewSheet() {
+  // 開いているシートを取得
+  const spreadSheet = SpreadsheetApp.getActive();
+  // ここを埋めてみてください
+  spreadSheet.????(????);
+}
+```
+
+(2) シートの中の値にアクセスしてみましょう。シートに記入した値のうち、最も右下にある値を出してみましょう
+
+```js
+function getValuesAsAssociativeArray() {
+  // 開いているシートを取得
+  const sheet = SpreadsheetApp.getActive().getActiveSheet();
+  // 値の入っているセル範囲を取得
+  const range = sheet.getDataRange();
+  // 値を連想配列としてログに出力してみましょう
+  let associativeArray = range.getValues();
+  console.log(associativeArray);
+  // 配列として取得した値から、好きな値を取り出してみましょう
+  console.log(associativeArray[??][??]);
+}
+```
+
+### コンテナバインドスクリプトでカスタム関数を作る
+
+sum() など、スプレッドシートに標準で組み込まれている関数以外にも、自分で便利な関数を作ることができます。
+
+例えば、月を数字で入力したときにその月の日数を求める関数を書いてみます(複雑なので2月は28日で考えます)
+
+```js
+function calcDays(month) {
+    // すでに習っているswitchを使って書いてみましょう
+    let result;
+    switch(month) {
+        case 2:
+            result = 28;
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            result = 30;
+            break;
+        default:
+            result = 31;
+            break;
+    }
+    return result;
+}
+```
+
+このような関数を書いて、A列に月を、B列に関数を図のように埋め込むことで関数が実行されます。
+
+![](./img/calcdays.jpg)
 
 
 ## Gmailを操作してみよう
