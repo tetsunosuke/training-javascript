@@ -110,6 +110,8 @@ console.log(document.querySelector('[name="your-name"]'));
 - 打刻ボタンを押す
 - がんばれば、打刻漏れの日の全てを打刻漏れとして修正も記入できそう！
 
+その他にも最近こそ減りましたがブラウザでできる系のソシャゲがはかどりそうですね。
+
 次のコンテンツでは、puppeteerでできることの詳細を紹介します。
 
 [次のコンテンツ：Puppeteerでできること](./puppeteer)
