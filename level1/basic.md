@@ -12,7 +12,7 @@ Level1の終わりには、プログラミングの基礎として、Progate の
 
 こちらの演習問題を提出したらLevel1は完了です。
 
-[index.html](./work/index.html), [index.css](./work/index.css), [index.js](./work/index.js)をダウンロードしてください
+[index.html](./work/index.html), [index.css](./work/index.css), [index.js](./work/index.js)をダウンロード(右クリックして名前をつけて保存)してください
  
 - index.html を開き、学習したタグなどを確認してください。
 - index.css を編集し、最低5つのスタイルを適用して画面をデザインしてください。
