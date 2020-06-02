@@ -60,8 +60,8 @@ const puppeteer = require('puppeteer');
 
 slowMo の表記がなくなったこと、urlがgoogle.jp になったこと、console.logが増えたこと。このくらいが差になっています。`ログが大切` と以前のコンテンツで記載しましたが、それぞれの動作の中で何がどうなっているのか？を表示するとわかりやすくなります。ここでは、google.jp を開いたのに、 いつのまにか google.co.jp が開かれていたことが理解できます。（これは、`リダイレクト` という仕組みで、自動的に転送された、ということです。）
 
-- `page.goto(url) で そのURLに遷移する
--  page.url() で今開いているURLを取得する
+- `page.goto(url)` で そのURLに遷移する
+- `page.url()` で今開いているURLを取得する
 
 ことがわかりました。
 
@@ -76,7 +76,7 @@ slowMo の表記がなくなったこと、urlがgoogle.jp になったこと、
 |click(selector)| セレクタで指定された要素をクリックします|
 |content()| ページのコンテンツを取得します|
 |goto(url)|urlへ遷移します|
-|goForward, goBack| 前へ、次へ|
+|goForward(), goBack()| 前へ、次へ|
 |screenshot()| スクリーンショットを保存します|
 |type(selector, text)| テキストを入力します|
 |url(), title()| URL, タイトルを取得します|
