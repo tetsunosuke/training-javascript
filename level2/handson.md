@@ -152,15 +152,18 @@ function calcDays(month) {
 ![](./img/calcdays.jpg)
 
 
-## Gmailを操作してみよう
+## その他のハンズオンコンテンツ
 
-今回は下記のコンテンツを用いて、そのとおりにやってみてください
-
-- [GASでGmailを操作して日々の日報メールの下書きを自動で作成する](https://tonari-it.com/gas-gmail-create-draft/)
+下記のコンテンツを用いて、そのとおりにやってみてください
+- Google カレンダーに予定を登録してみよう
+    - [GASでデフォルトのGoogleカレンダーにイベントを追加する簡単なスクリプト](https://tonari-it.com/gas-default-calendar-create-event/)
+    - [GASでスプレッドシートの入力からGoogleカレンダーに複数のイベントを追加](https://tonari-it.com/gas-calendar-create-events-spreadsheet/)
+- Gmailを操作してみよう
+    - [GASでGmailを操作して日々の日報メールの下書きを自動で作成する](https://tonari-it.com/gas-gmail-create-draft/)
 
 ## 演習問題
 
-その他のハンズオンコンテンツを探して、自分で同様にやってみてください。
+その他のハンズオンコンテンツを探して、自分で同様にやってみてください。できあがったプログラムコードを提出してください。
 
 ## 応用問題
 
