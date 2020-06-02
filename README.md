@@ -8,11 +8,9 @@
 - [Level2: JavaScript応用文法とGoogleAppsScript](level2/intro)
     - 完了までの想定： 3-5日間
 - ここから先はまだ記事を書いていません!!!
-- [Level3: DOMでHTMLを理解する](level3/intro)
-    - 完了までの想定： 1-2日間
-- [Level4: PuppeteerでChromeを操作する](level4/intro)
-    - 完了までの想定： 3日間
-- [Level5: 自分で考え、実装する](level5/intro)
+- [Level3: DOMでHTMLを理解する, PuppeteerでChromeを操作する] (level3/intro)
+    - 完了までの想定： 3-5日間
+- [Level4: 自分で考え、実装する](level4/intro)
     - 完了までの想定： 5日間
 
 ## はじめに
