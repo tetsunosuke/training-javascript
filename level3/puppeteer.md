@@ -15,7 +15,7 @@ const puppeteer = require('puppeteer');
 
 のような形を基本としています。ここに、自分がやりたいことを順番に記載していくことで、Chromeを操作することができます。
 
-ちなみにこれらについてどういう意味なのかを簡単に書いていくと
+ちなみにこれらについてどういう意味なのかを簡単にコメントを書いていくと
 ```js
 // puppeteer を使えるようにする（ライブラリを読み込む）
 const puppeteer = require('puppeteer');
@@ -58,12 +58,25 @@ const puppeteer = require('puppeteer');
 })();
 ```
 
+コマンドプロンプトから 
+
+```
+> node test1.js
+```
+
+で実行します
+
 slowMo の表記がなくなったこと、urlがgoogle.jp になったこと、console.logが増えたこと。このくらいが差になっています。`ログが大切` と以前のコンテンツで記載しましたが、それぞれの動作の中で何がどうなっているのか？を表示するとわかりやすくなります。ここでは、google.jp を開いたのに、 いつのまにか google.co.jp が開かれていたことが理解できます。（これは、`リダイレクト` という仕組みで、自動的に転送された、ということです。）
 
 - `page.goto(url)` で そのURLに遷移する
 - `page.url()` で今開いているURLを取得する
 
 ことがわかりました。
+
+## 試してみよう
+
+`headless: false` という行を削除して実行してみよう。何も起動していないのに、コマンドプロンプトには先程と同じような結果が表示されるはずです。こちらは「ヘッドレスモード」という、裏側でChromeが起動して動いている、という意味になります。画面を表示するよりも高速に動作するので、より実用的です。（開発をする際には、headless: falseを使います）
+
 
 このように、 page には様々な関数が用意されています。
 
@@ -80,5 +93,32 @@ slowMo の表記がなくなったこと、urlがgoogle.jp になったこと、
 |screenshot()| スクリーンショットを保存します|
 |type(selector, text)| テキストを入力します|
 |url(), title()| URL, タイトルを取得します|
+
+
+## 練習問題
+
+下記の動作を行うプログラムを作成しましょう。
+
+- キタムラ・ホールディングスのコーポレートサイトを開く: page.goto("https://kitamura-group.co.jp/")
+- そのタイトルを取得してconsole.logで表示:  page.title()
+- プライバシーポリシー へのリンクを取得
+    - class="privacy" なので: page.$(".privacy")
+```
+let selector = ".privacy";
+let elm = await page.$(selector);
+// テキストの取得はこのようにします
+let text = await page.evaluate(elm => elm.textContent, elm);
+```
+
+- そのリンクをクリック: page.click()
+- 再びタイトルを取得してconsole.logで表示: page.title()
+- "1　個人情報の定義、適用範囲" などの条項名を取得して表示
+    - "h3" を取得しますが、 複数あるので page.$$(selector) を使います。
+    - 複数取得（配列） されるので for 文を使ってすべて表示します
+
+- ブラウザの戻るを押します: page.goBack()
+- 再びタイトルを取得してconsole.logで表示: page.title()
+
+[練習問題の回答例はこちら](../src/level3.js) です。
 
 
