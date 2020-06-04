@@ -123,12 +123,9 @@ let text = await page.evaluate(elm => elm.textContent, elm);
 
 ## 演習問題
 
-下記のフォームに正しい回答を送信してください。
+[Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfCs2FzbezLdOUZAqu44iCJCwGedRSzcvkiHGKQamWU28a_kg/viewform)に正しい回答を送信してください。
 
 ヒント： "puppeteer select", "puppeteer type" などで検索してみよう
-
-[Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfCs2FzbezLdOUZAqu44iCJCwGedRSzcvkiHGKQamWU28a_kg/viewform)
-
 
 
 [目次へ戻る](../)
