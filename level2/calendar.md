@@ -2,6 +2,9 @@
 
 Level1 ゴールの確認のところで下記のようなプログラムを動かしました。
 
+特に今まで触れませんでしたが、 `var` とは、 `let` と同じようなものです。興味のある方は[JavaScriptで書く「var,let,const」の違いと使い分け方法](https://techacademy.jp/magazine/14872) などをご覧ください。
+
+
 ```js
 /**
  * Lists 10 upcoming events in the user's calendar.
