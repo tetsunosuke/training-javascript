@@ -9,7 +9,6 @@
     - 完了までの想定： 3-5日間
 - [Level3: DOMでHTMLを理解する, PuppeteerでChromeを操作する](level3/intro)
     - 完了までの想定： 3-5日間
-- ここから先はまだ記事を書いていません!!!
 - [Level4: 自分で考え、実装する](level4/intro)
     - 完了までの想定： 5日間
 

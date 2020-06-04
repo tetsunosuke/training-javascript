@@ -97,7 +97,7 @@ slowMo の表記がなくなったこと、urlがgoogle.jp になったこと、
 
 ## 練習問題
 
-下記の動作を行うプログラムを作成しましょう。
+(1)下記の動作を行うプログラムを作成しましょう。（リンク編）
 
 - キタムラ・ホールディングスのコーポレートサイトを開く: page.goto("https://kitamura-group.co.jp/")
 - そのタイトルを取得してconsole.logで表示:  page.title()
@@ -121,4 +121,14 @@ let text = await page.evaluate(elm => elm.textContent, elm);
 
 [練習問題の回答例はこちら](../src/level3.js) です。
 
+## 演習問題
 
+下記のフォームに正しい回答を送信してください。
+
+ヒント： "puppeteer select", "puppeteer type" などで検索してみよう
+
+[Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfCs2FzbezLdOUZAqu44iCJCwGedRSzcvkiHGKQamWU28a_kg/viewform)
+
+
+
+[目次へ戻る](../)
