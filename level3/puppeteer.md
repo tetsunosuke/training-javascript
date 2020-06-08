@@ -126,9 +126,9 @@ let text = await page.evaluate(elm => elm.textContent, elm);
 - (1) [勤労の獅子](https://kinrou.sas-cloud.jp/kinrou/kojin/) にログインして残りの有給日数を確認してみよう
 - (2) [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfCs2FzbezLdOUZAqu44iCJCwGedRSzcvkiHGKQamWU28a_kg/viewform)に正しい回答を送信してください。
 
-課題(1) については、`waitForNavigation` を使わないと思いどおりに動かないかもしれません。調べてみましょう。
+課題(1) については、`waitForNavigation` を使わないと思いどおりに動かないかもしれません。どのように使うのか調べてみましょう。
 
-課題(2) については、`waitForXPath` を使わないと思いどおりに動かないと思います。[PuppeteerでinnerTextを使って要素を選択する](https://qiita.com/shora_kujira16/items/34cb4074dfa715007698)を参考にしてみましょう。そのまま書いても動かないのでいろいろ調べたりしましょう。
+課題(2) については、`waitForXPath` を使わないと思いどおりに動かないと思います。[PuppeteerでinnerTextを使って要素を選択する](https://qiita.com/shora_kujira16/items/34cb4074dfa715007698)を参考にしてみましょう。そのまま書いても動かないのでいろいろ調べたりしましょう。入力するべき項目は `name` で探すと良いと思います。
 
 演習問題ができたら、作成したファイルをそれぞれ演習問題フォルダに提出してください。
 
