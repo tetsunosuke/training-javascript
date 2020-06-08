@@ -123,7 +123,7 @@ let text = await page.evaluate(elm => elm.textContent, elm);
 
 ## 演習問題
 
-(1) [勤労の獅子](https://kinrou.sas-cloud.jp/kinrou/kojin/) にログインして残りの有給日数を確認してみよう
-(2) [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfCs2FzbezLdOUZAqu44iCJCwGedRSzcvkiHGKQamWU28a_kg/viewform)に正しい回答を送信してください。
+- (1) [勤労の獅子](https://kinrou.sas-cloud.jp/kinrou/kojin/) にログインして残りの有給日数を確認してみよう
+- (2) [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfCs2FzbezLdOUZAqu44iCJCwGedRSzcvkiHGKQamWU28a_kg/viewform)に正しい回答を送信してください。
 
 [目次へ戻る](../)
