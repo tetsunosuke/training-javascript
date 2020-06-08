@@ -77,6 +77,8 @@ console.log(document.querySelector("#contents .news_blc ul li.fadeBase h3"));
 
 h3のタグで囲まれた欲しいところだけを取得できることがわかります。
 
+その他の方法としては [XPathとCSSセレクタをChromeで取得する](https://pg.echo-s.net/xpath%E3%81%A8css%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF%E3%82%92chrome%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/) などがあるようです。
+
 ## その他のセレクタ
 
 フォームの要素は `<input type="text" name="email">` のように、nameがついているのが一般的です。
