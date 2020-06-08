@@ -128,7 +128,7 @@ let text = await page.evaluate(elm => elm.textContent, elm);
 
 課題(1) については、`waitForNavigation` を使わないと思いどおりに動かないかもしれません。調べてみましょう。
 
-課題(2) については、waitForXPath を使わないと思いどおりに動かないと思います。[PuppeteerでinnerTextを使って要素を選択する](https://qiita.com/shora_kujira16/items/34cb4074dfa715007698)を参考にしてみましょう。そのまま書いても動かないのでいろいろ調べたりしましょう。
+課題(2) については、`waitForXPath` を使わないと思いどおりに動かないと思います。[PuppeteerでinnerTextを使って要素を選択する](https://qiita.com/shora_kujira16/items/34cb4074dfa715007698)を参考にしてみましょう。そのまま書いても動かないのでいろいろ調べたりしましょう。
 
 演習問題ができたら、作成したファイルをそれぞれ演習問題フォルダに提出してください。
 
