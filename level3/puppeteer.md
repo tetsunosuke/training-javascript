@@ -126,4 +126,6 @@ let text = await page.evaluate(elm => elm.textContent, elm);
 - (1) [勤労の獅子](https://kinrou.sas-cloud.jp/kinrou/kojin/) にログインして残りの有給日数を確認してみよう
 - (2) [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfCs2FzbezLdOUZAqu44iCJCwGedRSzcvkiHGKQamWU28a_kg/viewform)に正しい回答を送信してください。
 
+課題(1) については、`waitForNavigation` を使わないと思いどおりに動かないかもしれません。調べてみましょう。
+
 [目次へ戻る](../)
