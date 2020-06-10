@@ -30,7 +30,8 @@ const puppeteer = require('puppeteer');
         page.click("#back_menu")
     ]);
 
-    // 有給照会、ではなく、個人照会から見ます
+    // 解答例1: こちらが想定していた内容です
+    // 有休照会、ではなく、個人照会から見ます
     await Promise.all([
         page.waitForNavigation(),
         page.click(".menuBtn")
@@ -40,6 +41,32 @@ const puppeteer = require('puppeteer');
     let elms = await page.$$("#getuji_scroll td");
     text = await page.evaluate(elm => elm.textContent, elms[5]);
     console.log(`有給の残りは${text}日です`);
+
+    // 解答例2: 有休照会メニューから見ます
+    /*
+    await Promise.all([
+        page.waitForNavigation(),
+        page.click("#kinou_200012")
+    ]);
+
+    let xpath;
+    let elms;
+    // 足し算する必要があるので初期値を数字で0にします
+    let days = 0;
+    // for(let i=0; ....) のように回しても良いですが、1,2 だけを使うのでofを使います
+    // ※ ただしこの方法では来年困ります...
+    for (i of [1,2]) {
+        xpath = `/html/body/form/div[3]/div[2]/table/tbody/tr[${i}]/td[3]`;
+        elms = await page.$x(xpath);
+        text = await page.evaluate(elm => elm.textContent, elms[0]);
+        // 数値にするために数字の0を引きます
+        // trim() により前後のスペースを削除します
+        days += (text.trim() - 0);
+    }
+    console.log(`有給の残りは${days}日です`);
+    */
+
+
 
     // 閉じる
     browser.close();
