@@ -107,7 +107,7 @@ $('#adm_id').val('torihiki1@example.com'); $('#adm_pass').val('password1');
 圧縮の方法は
 
 ```
-> uglify-es bookmarklet.js > bookmarklet.min.js
+> uglifyjs bookmarklet.js > bookmarklet.min.js
 ```
 
 です。`uglify-js 元のファイル名 > 変換後ファイル名` です。圧縮する前に
